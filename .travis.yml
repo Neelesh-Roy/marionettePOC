@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - "5.3"
+env:
+  - YO=true
+  - DIR=browserify
+  - DIR=browserify-gulp
+  - DIR=browserify-grunt
+  - DIR=brunch
+  - DIR=webpack
+  - DIR=casperjs
+  - DIR=mocha
+  - DIR=jasmine
+script:
+  - bash ./travis-runner.sh
